@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 9</title>
+</head>
+<body>
+    
+    <h1>This is challenge 9</h1>
+
+    <!-- Prompt the user for a color, then have the
+    console report if the user typed a primary color
+    (red, blue, or yellow) or a secondary color
+    (orange, green or purple) or none of these.
+    Handle the situation for both uppercase and
+    lowercase letters in the color the user types in -->
+
+    <!-- Hint: remember the || means 'or' -->
+    
+    
+    <script>
+
+        let pickColor = prompt('Pick a primary color(RBY) or seconday(OGP):', "");
+
+        pickColor = pickColor.toLowerCase();
+
+        if(pickColor == 'red' || pickColor == "yellow" || pickColor == 'blue') {
+            console.log(`You picked a primary color: ${pickColor}`);
+        }
+        else if(pickColor == 'orange' || pickColor == 'green' || pickColor == 'purple') {
+            console.log(`You picked a secondary color: ${pickColor}`);
+        }
+        else {
+            console.log("You didn't the either of primary colors('red', 'blue', yellow) or secondary(orange, green, purple)");
+        }
+
+        
+    </script>
+
+</body>
+</html>
