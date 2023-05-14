@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge13</title>
+</head>
+<body>
+    <h1>This is the Challenge 13</h1>
+
+    <!-- For this challenge handle the situation that
+    happens if the user clicks cancel on the
+    prompt, or does not enter text in the prompt.
+
+    If the user does one of those two actions,
+    have the hello() function log to the console
+    "You didn't give me your name". Otherwise,
+    have the console log the greeting.     -->
+
+
+
+    <script>
+
+        const yourName = prompt('What is your name?');
+
+        
+        function hello(name) {
+            
+            if(name == "" || name == null) {
+            console.log(`You didn't give me a name`);
+        }
+
+            else {
+                console.log(`Hello ${name}, and Welcome!!`);
+            }
+        }
+
+        hello(yourName);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge16</title>
+</head>
+
+<body>
+    <h1>This is the Challenge 16</h1>
+
+
+    <!-- For this challenge, add the function that gets
+    random integers from the functions lecture.
+    Update the hospitality() function so that,
+    instead of looping through the whole array,
+    randomly picks one element from the array
+    and offers that to the user. -->
+
+
+
+
+    <script>
+
+        var yourName = prompt('What is your name?');
+
+        var fruits = ['apple', 'banana', 'mango', 'cherry', 'orange'];
+
+
+        function hello(name) {
+            var greetings;
+
+            if (name == null || name == " ") {
+                greetings = `You didn't give me a name`;
+            }
+            else {
+                greetings = `Hello ${name}, and welcome!!`;
+            }
+
+            return greetings;
+        }
+
+
+        let point = (Math.floor(Math.random() * 5));
+
+        // function randomInt(min, max) {
+        //     return Math.floor( (max - min + 1) * Math.random() ) + min;
+        // }   //this is also correct 
+
+        function hospitality(name, gift) {
+
+            console.log(hello(yourName));
+
+            // for (var i = 0; i < gift.length; i++) {
+            //     console.log(`Hello ${name}, Would you like some ${gift[point]}? `);
+            // }
+
+            // let randomGift = gift[ randomInt(0, gift.length -1) ]; //functions soln
+
+            let randomGift = gift[point];
+            console.log(`Hello ${name}, would you like to have some ${randomGift}`)
+                ;
+        }
+        hospitality(yourName, fruits);
+
+
+
+    </script>
+</body>
+
+</html>
